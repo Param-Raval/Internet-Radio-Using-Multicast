@@ -4,9 +4,9 @@ The objective of this project is to develop an internet radio by implementing mu
 
 The client will have the functionality to pause, play, and change station at will without losing synchronization with the live stream. The server can add new stations, delete stations, and add songs to each station.
 
-Concepts:
+### Concepts:
 
--A TCP socket is used as a control channel and receiving station info from the server.
--Server sends multimedia over a UDP socket once the client is connected
--To enable multiple users/clients, we use threading which creates a new thread each time a client connects with the server
--The multicast reception stops and the thread is deleted once the client disconnects (pauses) with the server. A new thread is formed upon restarting.
+- A TCP socket is used as a control channel and receiving station info from the server
+- Server sends multimedia over a UDP socket once the client is connected
+- To enable multiple users/clients, we use threading which creates a new thread each time a client connects with the server
+- The multicast reception stops and the thread is deleted once the client disconnects (pauses) with the server. A new thread is formed upon restarting
